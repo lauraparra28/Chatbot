@@ -1,0 +1,16 @@
+{
+    "title": "Chatbot PUC-Rio",
+    "description": "<center>O assistente tem acesso a {num_documents} documentos ({num_segment_contents} parágrafos)</center>",
+    "examples": [
+        ["Quando deve ser renovada a matrícula?"],
+        ["O que é o histórico escolar?"], ["Como posso virar aluno da PUC-Rio?"],
+        ["Quais são os requisitos de proficiência linguística para os alunos de mestrado no programa?"],
+        ["Como faço para cancelar uma disciplina?"], ["A PUC-Rio tem curso de medicina?"]
+    ],
+    "theme": "gradio/default",
+    "submit_btn": "Enviar",
+    "stop_btn": "Parar",
+    "retry_btn": "🔄 Tentar novamente",
+    "undo_btn": "↩️ Desfazer",
+    "clear_btn": "🗑️ Limpar"
+}

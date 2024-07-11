@@ -1,0 +1,11 @@
+chardet==5.2.0
+torch==2.3.0
+langchain_text_splitters
+sentence-transformers==3.0.1
+pandas
+tqdm
+openpyxl
+gradio==4.37.1
+langchain-openai
+langchain-core
+langchain
