@@ -1,0 +1,44 @@
+[
+    {
+        "question": "Teste - Pergunta",
+        "answer": "Teste - Resposta",
+        "rating": 5,
+        "feedback": "Teste - Feeback"
+    },
+    {
+        "question": "O que é o MEC?",
+        "answer": "O MEC é o Ministério da Educação, responsável pela avaliação da qualidade dos cursos de graduação e pós-graduação no Brasil.",
+        "rating": 5,
+        "feedback": "Teste - Feeback"
+    },
+    {
+        "question": "Gostaria de saber que é MEC?",
+        "answer": "O MEC é o Ministério da Educação, responsável pela formulação e implementação da política nacional de educação, incluindo a regulação e avaliação do ensino no Brasil.<br><br>----<br><a href='https://www.puc-rio.br/sobrepuc/depto/dar/download/dar_normas_academicas.pdf' target='_blank'>DAR - Normas Acadêmicas</a>",
+        "rating": 4,
+        "feedback": "Boa resposta, ótimo."
+    },
+    {
+        "question": "Quais são os programas da PUC?",
+        "answer": "Os programas da PUC-Rio são predominantemente de Pós-Graduação, incluindo cursos de mestrado e doutorado que oferecem ensino e pesquisa de alta qualidade.<br><br>----<br><a href='https://www.puc-rio.br/ensinopesq/ccpg/download/posgraduacao_stritosensu_regulamento.pdf' target='_blank'>Regulamento dos Programas de Pós-Graduação da PUC-Rio</a><br><a href='https://www.puc-rio.br/sobrepuc/depto/dar/download/dar_normas_academicas.pdf' target='_blank'>DAR - Normas Acadêmicas</a>",
+        "rating": 3,
+        "feedback": "Pode incluis mais informacoes relevantes."
+    },
+    {
+        "question": "O que é o histórico escolar?",
+        "answer": "O Histórico Escolar é um documento que contém informações sobre o desempenho acadêmico de um aluno ao longo de cada período letivo. Ele é emitido pela CCAR e atualizado a cada renovação de matrícula. Caso haja algum erro no Histórico Escolar, o aluno pode solicitar uma retificação dentro dos prazos estabelecidos pelo Calendário Escolar. Não é possível realizar alterações nos graus já registrados no Histórico Escolar, a menos que haja motivos específicos definidos pelos regulamentos da instituição de ensino.\n\n----\n<a href='https://www.puc-rio.br/sobrepuc/depto/dar/download/dar_normas_academicas.pdf' target='_blank'>DAR - Normas Acadêmicas</a>",
+        "rating": 5,
+        "feedback": "Excelente resposta."
+    },
+    {
+        "question": "Onde está disponível o prazo académico?",
+        "answer": "O prazo acadêmico está disponível no Calendário Escolar. Fora do prazo acadêmico, o aluno deverá consultar o Setor de Atendimentos da CCAR. Mais informações em Domínios adicionais.\n\n----\n<a href='https://www.puc-rio.br/sobrepuc/depto/dar/download/dar_normas_academicas.pdf' target='_blank'>DAR - Normas Acadêmicas</a>",
+        "rating": 5,
+        "feedback": "Poderia dar uma data específica neste periodo."
+    },
+    {
+        "question": "Quando é realizada uma habilitação?",
+        "answer": "Uma habilitação é realizada após o término do curso na PUC-Rio, desde que o curso permita. O aluno interessado em ser habilitado à formatura deve seguir os passos necessários, como assinar a Ata de Colação de Grau e solicitar a matrícula através do site de Requerimentos Acadêmicos – CCPA, respeitando os prazos acadêmicos da Universidade.\n\n----\n<a href='https://www.puc-rio.br/sobrepuc/depto/dar/download/dar_normas_academicas.pdf' target='_blank'>DAR - Normas Acadêmicas</a>",
+        "rating": 4.5,
+        "feedback": "Poderia dar maior informação."
+    }
+]
