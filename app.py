@@ -13,7 +13,7 @@ with open("gradio.json", encoding='utf-8') as f:
 
 def on_submit(query):
     response = fn.rag_response(query, data=data, detailed_response=False)
-    return response 
+    return response.replace("\n", "<br>")
 
 def load_evaluations():
     if os.path.exists(evaluations_file):
@@ -35,7 +35,7 @@ def evaluate_answer(question, answer, rating, feedback):
     }
     evaluations.append(evaluation)
     save_evaluation(evaluations)
-    return f"This rate answer is {rating} and consider the following feedback: {feedback}"
+    return f"A avalição numérica dada é {rating} e foi dado o seguinte feedback: {feedback}"
 
 evaluations_file = "evaluations.json"
 evaluations = load_evaluations()
@@ -47,14 +47,14 @@ evaluations = load_evaluations()
 with gr.Blocks() as demo:
     gr.Markdown(f"## {config.get('title')}")
     gr.Markdown(config["description"])
-    query_input = gr.Textbox(label="Enter your query")
+    query_input = gr.Textbox(label="Escreva a sua pergunta")
 
     with gr.Row():
         submit_btn = gr.Button("Enviar")
-        clear_btn = gr.ClearButton(components=[query_input], value="Limpiar")
+        clear_btn = gr.ClearButton(components=[query_input], value="Limpar")
         
     gr.Examples(examples=config["examples"], inputs=query_input)
-    answer_output = gr.Textbox(label="Resposta")
+    answer_output = gr.HTML(label="Resposta")
       
     submit_btn.click(fn=on_submit, inputs=query_input, outputs=answer_output)
 
@@ -77,25 +77,3 @@ with gr.Blocks() as demo:
 
 demo.launch()
 
-
-"""
-
- query = fn.rag_response(" ", data=data, detailed_response=False)
-    gr.ChatInterface(fn=on_submit, **config)
-    eval_btn = gr.Button("Avaliar a resposta")
-    
-    answer_output = on_submit(query=" ", history="")
-    
-    with gr.Column() as eval_section:
-        gr.Markdown("### Avalie a resposta")
-        
-        rating = gr.Slider(1, 5, step=0.5, label="Pontuação Avaliação")
-        feedback = gr.Textbox(lines=3, label="Feedback", placeholder="Se você tem alguma sugestão ou comentario, por favor, escreva aqui.")
-        
-        submit_btn = gr.Button("Submit")
-        evaluation_output = gr.Textbox(label="Resumo da avaliação")
-              
-    
-    
-    eval_btn.click(fn=evaluate_answer, inputs=[query, answer_output, rating, feedback], outputs=evaluation_output)
-    """
